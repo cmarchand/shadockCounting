@@ -32,5 +32,12 @@ You have to implement a converter from arabic numbers to Shadock numbers, and a 
 shadock numbers to arabic numbers.
 
 I've discovered this kata on [lifelightdev account](https://github.com/lifelightdev/countInShadok/).
-My implementation is much more complex than lifelightdev's one, but hers is limited to 16. Mine
-uses a Strategy pattern, and unit tests are written in Gherkin with Cucumber.
+
+I've written a first implementation, based on a Strategy pattern, but it's largel overkill.
+You can found it in [branch strategy](https://github.com/cmarchand/shadockCounting/tree/strategy).
+Unit tests are written in Gherkin with Cucumber.
+
+I've written another implementation, quite simpler, only based on an word array, and it's available in
+[master branch](https://github.com/cmarchand/shadockCounting/tree/master).
+
+Enjoy !
