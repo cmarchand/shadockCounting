@@ -40,4 +40,7 @@ Unit tests are written in Gherkin with Cucumber.
 I've written another implementation, quite simpler, only based on a word array, and it's available in
 [master branch](https://github.com/cmarchand/shadockCounting/tree/master).
 
+In the last commit, I've implemented to shadock to number converter. I've been required to separate the two
+converters in two different features, because of non-found glues. No idea why... That's not as clear as I expect.
+
 Enjoy !
