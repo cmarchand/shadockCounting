@@ -7,7 +7,7 @@ import static io.cucumber.junit.platform.engine.Constants.GLUE_PROPERTY_NAME;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("com/oxiane/katas/shadock")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value="com.oxiane.katas.shadock.glues")
-public class ShadockJunitRunnerTest {
+@SelectClasspathResource("com/oxiane/katas/shadock/number-to-shadock.feature")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value="com.oxiane.katas.shadock.glues.n2s")
+public class NumberToShadockTest {
 }

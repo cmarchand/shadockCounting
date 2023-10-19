@@ -1,4 +1,4 @@
-package com.oxiane.katas.shadock.glues;
+package com.oxiane.katas.shadock.glues.n2s;
 
 import com.oxiane.katas.shadock.Shadock;
 import io.cucumber.java.en.Given;
@@ -6,22 +6,24 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.assertj.core.api.Assertions;
 
-public class ShadockGlue {
-  private int input;
-  private String actual;
+public class NumberToShadockGlue {
+  private int inputNumber;
+  private String actualShadock;
   private Shadock shadock = new Shadock();
 
   @Given("Input number is {int}")
   public void input_number_is(int input) {
-    this.input = input;
+    this.inputNumber = input;
   }
   @When("It is converted to Shadock")
   public void it_is_converted_to_shadock() {
-    actual = shadock.toShadock(input);
+    actualShadock = shadock.toShadock(inputNumber);
   }
   @Then("Shadock result is {word}")
   public void shadock_result_is(String expected) {
-    Assertions.assertThat(actual).isEqualTo(expected);
+    Assertions.assertThat(actualShadock).isEqualTo(expected);
   }
+
+
 
 }
